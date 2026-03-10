@@ -86,7 +86,8 @@ export const eventsData = {
             date: 'TBD',
             venue: 'Project Hub',
             eligibility: 'All students',
-            image: '/logos/creAIte.png'
+            image: '/logos/creAIte.png',
+            rulesDocument: '/eventrules/creAIte.jpeg'
         }
     ],
     'beyond-coders': [
