@@ -33,16 +33,10 @@ const EventDetailsPage = () => {
                 Back to Events
             </button>
 
-            {/* Banner */}
-            <div className={`w-full h-48 md:h-64 rounded-3xl bg-gradient-to-r ${club.color} mb-12 shadow-2xl relative overflow-hidden flex items-center justify-center`}>
-                <div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
-                {event.image && (
-                    <img src={event.image} alt={event.title} className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay z-0" />
-                )}
-                <h1 className="relative z-10 text-4xl md:text-6xl font-black text-white px-6 text-center drop-shadow-lg tracking-tight">
-                    {event.title}
-                </h1>
-            </div>
+            {/* Event Title */}
+            <h1 className="text-4xl md:text-6xl font-black text-white text-center drop-shadow-lg tracking-tight mb-12">
+                {event.title}
+            </h1>
 
             {/* Event Schedule Section */}
             <EventSchedule event={event} />
