@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronLeft } from 'lucide-react';
 import { eventsData, clubs } from '../data';
 import EventDetails from '../components/EventDetails';
+import EventSchedule from '../components/EventSchedule';
 import RegistrationForm from '../components/RegistrationForm';
 
 const EventDetailsPage = () => {
@@ -43,8 +44,16 @@ const EventDetailsPage = () => {
                 </h1>
             </div>
 
-            {/* Embedded Rules Viewer or Text Rules */}
-            {event.rulesDocument ? (
+            {/* Event Schedule Section */}
+            <EventSchedule event={event} />
+
+            {/* Event Description, Rules and Regulations */}
+            <div className="mb-12">
+                <EventDetails event={event} club={club} />
+            </div>
+
+            {/* AI Browser / Rules Image Section */}
+            {event.rulesDocument && (
                 <div className="w-full bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden mb-12 flex flex-col">
                     {/* Browser Header Bar */}
                     <div className="bg-slate-800 p-3 border-b border-slate-700 flex items-center gap-3 relative">
@@ -72,10 +81,6 @@ const EventDetailsPage = () => {
                             />
                         </div>
                     </div>
-                </div>
-            ) : (
-                <div className="mb-12">
-                    <EventDetails event={event} club={club} />
                 </div>
             )}
 
