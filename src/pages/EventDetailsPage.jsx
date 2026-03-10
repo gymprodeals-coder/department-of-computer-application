@@ -33,10 +33,19 @@ const EventDetailsPage = () => {
                 Back to Events
             </button>
 
-            {/* Event Title */}
-            <h1 className="text-4xl md:text-6xl font-black text-white text-center drop-shadow-lg tracking-tight mb-12">
-                {event.title}
-            </h1>
+            {/* Centered Event Logo Header */}
+            <div className="flex flex-col items-center mb-6">
+                {event.image && (
+                    <img
+                        src={event.image}
+                        alt={event.title}
+                        className="w-24 h-24 object-contain mb-3"
+                    />
+                )}
+                <h1 className="text-3xl font-bold text-white text-center drop-shadow-lg tracking-tight">
+                    {event.title}
+                </h1>
+            </div>
 
             {/* Event Schedule Section */}
             <EventSchedule event={event} />
