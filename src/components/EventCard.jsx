@@ -14,7 +14,7 @@ const EventCard = ({ event, onClick }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={onClick}
-            className="cursor-pointer flex flex-col items-center justify-center bg-white rounded-xl shadow-lg transition-all duration-300 p-6"
+            className="cursor-pointer flex flex-col items-center justify-center bg-slate-900/60 backdrop-blur-md border border-slate-700 rounded-xl shadow-lg transition-all duration-300 p-6 hover:border-purple-500 hover:shadow-purple-500/20"
         >
             {event.image ? (
                 <div className="w-28 h-28 flex items-center justify-center mb-4">
@@ -26,7 +26,7 @@ const EventCard = ({ event, onClick }) => {
                 </div>
             )}
 
-            <h3 className="text-lg font-semibold text-slate-800 text-center">
+            <h3 className="text-lg font-semibold text-white text-center mt-4">
                 {event.title}
             </h3>
         </motion.div>
