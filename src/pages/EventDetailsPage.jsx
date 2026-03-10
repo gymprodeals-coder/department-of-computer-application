@@ -47,42 +47,10 @@ const EventDetailsPage = () => {
             {/* Event Schedule Section */}
             <EventSchedule event={event} />
 
-            {/* Event Description, Rules and Regulations */}
+            {/* Event Description, Rules and Regulations Container */}
             <div className="mb-12">
                 <EventDetails event={event} club={club} />
             </div>
-
-            {/* AI Browser / Rules Image Section */}
-            {event.rulesDocument && (
-                <div className="w-full bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden mb-12 flex flex-col">
-                    {/* Browser Header Bar */}
-                    <div className="bg-slate-800 p-3 border-b border-slate-700 flex items-center gap-3 relative">
-                        <div className="flex gap-2 absolute left-4">
-                            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <div className="mx-auto bg-slate-900 text-slate-400 text-xs px-4 py-1.5 rounded-md flex items-center justify-center min-w-[200px] border border-slate-700 shadow-inner truncate">
-                            {event.rulesDocument.split('/').pop()}
-                        </div>
-                    </div>
-
-                    {/* Scrollable Image Container */}
-                    <div className="w-full bg-slate-950 relative h-[600px] overflow-y-auto">
-                        <div className="w-full min-h-full flex items-center justify-center p-4">
-                            <img
-                                src={event.rulesDocument}
-                                alt={`${event.title} Rules`}
-                                className="w-full h-auto object-contain rounded-lg shadow-xl"
-                                onError={(e) => {
-                                    e.target.onerror = null;
-                                    e.target.parentNode.innerHTML = `<div class="text-slate-500 flex flex-col items-center justify-center h-64 border-2 border-dashed border-slate-800 rounded-xl w-full"><span>Could not load <b>${event.rulesDocument}</b>.</span></div>`
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
 
             {/* Registration Form (Now takes full width below the viewer) */}
             <div className="w-full max-w-3xl mx-auto">
