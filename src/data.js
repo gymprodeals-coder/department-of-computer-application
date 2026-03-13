@@ -18,6 +18,19 @@ export const clubs = [
 export const eventsData = {
     'next-gen': [
         {
+            id: 'creaite',
+            title: 'creAIte',
+            shortDescription: 'Creative AI application building.',
+            description: 'Build a creative application powered by AI APIs to help artists, musicians, or writers.',
+            rules: ['Team of up to 4', 'Must have a working UI', 'Original ideas only'],
+            date: '16 March 2026',
+            time: '01:30 PM – 03:30 PM',
+            venue: 'Project Hub',
+            eligibility: 'All students',
+            image: '/logos/creAIte.png',
+            rulesDocument: '/eventrules/creAIte.png'
+        },
+        {
             id: 'game-smith',
             title: 'Game Smith',
             shortDescription: 'Build the ultimate gaming experience.',
@@ -29,19 +42,6 @@ export const eventsData = {
             eligibility: 'All students',
             image: '/logos/game smith.png',
             rulesDocument: '/eventrules/game smith.png'
-        },
-        {
-            id: 'ai-maestro',
-            title: 'AI Maestro',
-            shortDescription: 'Showcase your AI mastery.',
-            description: 'Develop AI models to solve complex problems and showcase your mastery over machine learning.',
-            rules: ['Individual or Team of 2', 'Open source models only', '2 hour duration'],
-            date: '19 March 2026',
-            time: '01:00 PM – 03:30 PM',
-            venue: 'AI Innovation Center',
-            eligibility: 'All students',
-            image: '/logos/AI maestro.png',
-            rulesDocument: '/eventrules/AI Maestro.jpeg'
         },
         {
             id: 'ai-solve-x',
@@ -57,25 +57,12 @@ export const eventsData = {
             rulesDocument: '/eventrules/AI solve X.jpeg'
         },
         {
-            id: 'snap-ai',
-            title: 'Snap AI',
-            shortDescription: 'AI image generation contest.',
-            description: 'Use your prompt engineering skills to create the most stunning and accurate images based on hidden prompts.',
-            rules: ['Individual participation', 'Specific tools will be provided', 'Time limit: 60 minutes'],
-            date: '16 March 2026',
-            time: '01:30 PM – 03:30 PM',
-            venue: 'Computer Lab 3',
-            eligibility: 'All students',
-            image: '/logos/snap AI.png',
-            rulesDocument: '/eventrules/snap AI.jpeg'
-        },
-        {
             id: '404-human-not-found',
             title: '404 Human Not Found',
             shortDescription: 'A unique coding and puzzle challenge.',
             description: 'Navigate through a series of logical puzzles and coding challenges where thinking like a machine is the only way out.',
             rules: ['Maximum 2 members per team', 'No external help', 'Fastest completion wins'],
-            date: '19 March 2026',
+            date: '18 March 2026',
             time: '01:30 PM – 03:30 PM',
             venue: 'Seminar Hall',
             eligibility: 'All students',
@@ -83,17 +70,30 @@ export const eventsData = {
             rulesDocument: '/eventrules/404 human not found.jpeg'
         },
         {
-            id: 'creaite',
-            title: 'creAIte',
-            shortDescription: 'Creative AI application building.',
-            description: 'Build a creative application powered by AI APIs to help artists, musicians, or writers.',
-            rules: ['Team of up to 4', 'Must have a working UI', 'Original ideas only'],
-            date: '16 March 2026',
+            id: 'ai-maestro',
+            title: 'AI Maestro',
+            shortDescription: 'Showcase your AI mastery.',
+            description: 'Develop AI models to solve complex problems and showcase your mastery over machine learning.',
+            rules: ['Individual or Team of 2', 'Open source models only', '2 hour duration'],
+            date: '19 March 2026',
             time: '01:30 PM – 03:30 PM',
-            venue: 'Project Hub',
+            venue: 'AI Innovation Center',
             eligibility: 'All students',
-            image: '/logos/creAIte.png',
-            rulesDocument: '/eventrules/creAIte.png'
+            image: '/logos/AI maestro.png',
+            rulesDocument: '/eventrules/AI Maestro.jpeg'
+        },
+        {
+            id: 'snap-ai',
+            title: 'Snap AI',
+            shortDescription: 'AI image generation contest.',
+            description: 'Use your prompt engineering skills to create the most stunning and accurate images based on hidden prompts.',
+            rules: ['Individual participation', 'Specific tools will be provided', 'Time limit: 60 minutes'],
+            date: '19 March 2026',
+            time: '01:30 PM – 03:30 PM',
+            venue: 'Computer Lab 3',
+            eligibility: 'All students',
+            image: '/logos/snap AI.png',
+            rulesDocument: '/eventrules/snap AI.jpeg'
         }
     ],
     'beyond-coders': [
@@ -116,25 +116,12 @@ export const eventsData = {
             shortDescription: 'Create useful products from discarded materials.',
             description: 'Showcase your creativity and environmental consciousness by turning waste materials into valuable wealth.',
             rules: ['Bring your own waste materials', 'No pre-made items', 'Time limit: 2 hours'],
-            date: '18 March 2026',
+            date: '16 March 2026',
             time: '01:30 PM – 03:30 PM',
             venue: 'Quadrangle',
             eligibility: 'All students',
             image: '/logos/wealth out of waste.png',
             rulesDocument: '/eventrules/wealth out of waste.png'
-        },
-        {
-            id: 'quiz',
-            title: 'Quiz',
-            shortDescription: 'Test your general and tech knowledge.',
-            description: 'A comprehensive quiz covering technology, pop culture, current events, and logical reasoning.',
-            rules: ['Team of 2 members', 'Multiple rounds', 'Judges decision is final'],
-            date: '18 March 2026',
-            time: '01:30 PM – 03:30 PM',
-            venue: 'Mini Auditorium',
-            eligibility: 'All students',
-            image: '/logos/quiz.png',
-            rulesDocument: '/eventrules/Quiz.jpeg'
         },
         {
             id: 'zero-waste-fireless-cooking',
@@ -148,6 +135,19 @@ export const eventsData = {
             eligibility: 'All students',
             image: '/logos/zero waste fireless cooking.png',
             rulesDocument: '/eventrules/zero waste fireless cooking.jpeg'
+        },
+        {
+            id: 'quiz',
+            title: 'Quiz',
+            shortDescription: 'Test your general and tech knowledge.',
+            description: 'A comprehensive quiz covering technology, pop culture, current events, and logical reasoning.',
+            rules: ['Team of 2 members', 'Multiple rounds', 'Judges decision is final'],
+            date: '18 March 2026',
+            time: '01:30 PM – 03:30 PM',
+            venue: 'Mini Auditorium',
+            eligibility: 'All students',
+            image: '/logos/quiz.png',
+            rulesDocument: '/eventrules/Quiz.jpeg'
         },
         {
             id: 'folk-dance',
