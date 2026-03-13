@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ClubEventsPage from './pages/ClubEventsPage';
 import EventDetailsPage from './pages/EventDetailsPage';
+import AdminDashboard from './pages/AdminDashboard';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const AnimatedRoutes = () => {
           <Route index element={<HomePage />} />
           <Route path="events/:clubId" element={<ClubEventsPage />} />
           <Route path="events/:clubId/:eventId" element={<EventDetailsPage />} />
+          <Route path="admin" element={<AdminDashboard />} />
         </Route>
       </Routes>
     </AnimatePresence>
