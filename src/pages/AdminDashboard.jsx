@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Download, Filter, LayoutDashboard, Users, CalendarDays, Loader2, ArrowUpDown } from 'lucide-react';
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbys-reddw_jPM79p4Dc1s4e_FjNrAxOWYdW8B--fmo5t4GWzDFkJaDm3JwqrIM00WuiNg/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzHcDzmPF2LJ-22-eQPaOppO_kQFXeGFiHhAbjKtUQ_khiAPQoN_JVHnCfsQ9lUp1HQ/exec";
 
 const EVENT_LIST = [
     "IPL Auction",

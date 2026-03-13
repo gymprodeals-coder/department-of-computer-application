@@ -32,7 +32,7 @@ const RegistrationForm = ({ event, clubColor }) => {
             event: event.title
         };
 
-        const googleAppsScriptURL = "https://script.google.com/macros/s/AKfycbys-reddw_jPM79p4Dc1s4e_FjNrAxOWYdW8B--fmo5t4GWzDFkJaDm3JwqrIM00WuiNg/exec";
+        const googleAppsScriptURL = "https://script.google.com/macros/s/AKfycbzHcDzmPF2LJ-22-eQPaOppO_kQFXeGFiHhAbjKtUQ_khiAPQoN_JVHnCfsQ9lUp1HQ/exec";
 
         try {
             const response = await fetch(googleAppsScriptURL, {
