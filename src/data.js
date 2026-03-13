@@ -88,7 +88,7 @@ export const eventsData = {
             shortDescription: 'Creative AI application building.',
             description: 'Build a creative application powered by AI APIs to help artists, musicians, or writers.',
             rules: ['Team of up to 4', 'Must have a working UI', 'Original ideas only'],
-            date: '17 March 2026',
+            date: '16 March 2026',
             time: '01:30 PM – 03:30 PM',
             venue: 'Project Hub',
             eligibility: 'All students',
