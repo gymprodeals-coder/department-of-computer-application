@@ -27,7 +27,7 @@ export const eventsData = {
             venue: 'Main Lab',
             eligibility: 'All students',
             image: '/logos/game smith.png',
-            rulesDocument: '/eventrules/game smith.jpeg'
+            rulesDocument: '/eventrules/game smith.png'
         },
         {
             id: 'ai-maestro',
@@ -87,7 +87,7 @@ export const eventsData = {
             venue: 'Project Hub',
             eligibility: 'All students',
             image: '/logos/creAIte.png',
-            rulesDocument: '/eventrules/creAIte.jpeg'
+            rulesDocument: '/eventrules/creAIte.png'
         }
     ],
     'beyond-coders': [
@@ -101,7 +101,7 @@ export const eventsData = {
             venue: 'Main Auditorium',
             eligibility: 'All students',
             image: '/logos/IPL auction.png',
-            rulesDocument: '/eventrules/IPL Auction.jpeg'
+            rulesDocument: '/eventrules/IPL auction.png'
         },
         {
             id: 'wealth-out-of-waste',
@@ -113,7 +113,7 @@ export const eventsData = {
             venue: 'Quadrangle',
             eligibility: 'All students',
             image: '/logos/wealth out of waste.png',
-            rulesDocument: '/eventrules/wealth out of waste.jpeg'
+            rulesDocument: '/eventrules/wealth out of waste.png'
         },
         {
             id: 'quiz',
