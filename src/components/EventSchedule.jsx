@@ -14,7 +14,7 @@ const EventSchedule = ({ event }) => {
                     </div>
                     <div>
                         <p className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Date</p>
-                        <p className="text-white font-medium">16/03/2026 – 19/03/2026</p>
+                        <p className="text-white font-medium">{event.date}</p>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@ const EventSchedule = ({ event }) => {
                     </div>
                     <div>
                         <p className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Event Time</p>
-                        <p className="text-white font-medium">01:30 PM – 04:00 PM</p>
+                        <p className="text-white font-medium">{event.time}</p>
                     </div>
                 </div>
             </div>
